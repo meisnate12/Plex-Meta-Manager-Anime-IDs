@@ -71,5 +71,15 @@
     "tvdb_id": 1823217, // Season 2 ID
     "mal_id": 51009,
     "anilist_id": 145064
+  },
+  "17643": {
+    "tvdb_id": 2014135, // Season 2 ID
+    "mal_id": 53148,
+    "anilist_id": 154982
+  },
+  "16426": {
+    "tvdb_id": 1988566, // Season 2 ID
+    "mal_id": 49387,
+    "anilist_id": 136430
   }
 }
