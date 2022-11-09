@@ -1,2 +1,75 @@
 {
+  "8090": {
+    "tvdb_id": 8026,
+    "mal_id": 9135,
+    "anilist_id": 9135
+  },
+  "9826": {
+    "mal_id": 18397
+  },
+  "10583": {
+    "tvdb_id": "15659,7398", // Two movie IDs
+    "imdb_id": "tt3646944,tt3646946",
+    "mal_id": "23775, 23777"
+  },
+  "10944": {
+    "tvdb_id": 701272, // Season 2 ID
+    "mal_id": 25777,
+    "anilist_id": 20958
+  },
+  "13241": {
+    "tvdb_id": 743129, // Season 3 ID
+    "mal_id": 35760,
+    "anilist_id": 99147
+  },
+  "13546": {
+    "tvdb_id": 13398,
+    "imdb_id": "tt7941892",
+    "mal_id": 36702,
+    "anilist_id": 100465
+  },
+  "14444": {
+    "tvdb_id": 743129, // Season 3 ID
+    "mal_id": 38524,
+    "anilist_id": 104578
+  },
+  "14977": {
+    "tvdb_id": 1846517, // Season 4 ID
+    "mal_id": 40028,
+    "anilist_id": 110277
+  },
+  "15582": {
+    "tvdb_id": 140480,
+    "imdb_id": "tt12415546",
+    "mal_id": 42091,
+    "anilist_id": 119113
+  },
+  "16177": {
+    "tvdb_id": 1846517, // Season 4 ID
+    "mal_id": 48583,
+    "anilist_id": 131681
+  },
+  "9323": {
+    "tvdb_id": 23971,
+    "imdb_id": "tt2918988",
+    "mal_id": 13271,
+    "anilist_id": 13271
+  },
+  "10012": {
+    "tvdb_id": 30756,
+    "imdb_id": "tt3198698",
+    "mal_id": 19951,
+    "anilist_id": 19951
+  },
+  "16169": {
+    "tvdb_id": 158149,
+    "imdb_id": "tt14331144",
+    "mal_id": 48561,
+    "anilist_id": 131573
+  },
+  "17196": {
+    "tvdb_id": 1823217, // Season 2 ID
+    "mal_id": 51009,
+    "anilist_id": 145064
+  }
 }
