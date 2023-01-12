@@ -14,11 +14,18 @@ for anime in AniDBIDs.xpath("//anime"):
     anidb_id = int(anidb_id[1:]) if anidb_id[0] == "a" else int(anidb_id)
     anime_dict = {}
     tvdb_id = str(anime.xpath("@tvdbid")[0])
-    try:
-        if tvdb_id:
-            anime_dict["tvdb_id"] = int(tvdb_id)
-    except ValueError:
-        pass
+    if tvdb_id.isdigit():
+        anime_dict["tvdb_id"] = int(tvdb_id)
+        tvdb_season = str(anime.xpath("@defaulttvdbseason")[0])
+        if tvdb_season.isdigit():
+            anime_dict["tvdb_season"] = int(tvdb_season)
+            if int(tvdb_season) != 0:
+                tvdb_epoffset = str(anime.xpath("@episodeoffset")[0])
+                if tvdb_epoffset.isdigit() :
+                    anime_dict["tvdb_epoffset"] = int(tvdb_epoffset)
+                else:    
+                    tvdb_epoffset = 0
+                    anime_dict["tvdb_epoffset"] = int(tvdb_epoffset)
     imdb_id = str(anime.xpath("@imdbid")[0])
     if imdb_id.startswith("tt"):
         anime_dict["imdb_id"] = imdb_id
@@ -48,7 +55,7 @@ with open("pmm_edits.json", "r") as f:
     for anidb_id, ids in json.load(f).items():
         anidb_id = int(anidb_id)
         if anidb_id in anime_dicts:
-            for attr in ["tvdb_id", "mal_id", "anilist_id", "imdb_id"]:
+            for attr in ["tvdb_id","tvdb_season","tvdb_epoffset", "mal_id", "anilist_id", "imdb_id"]:
                 if attr in ids:
                     anime_dicts[anidb_id][attr] = ids[attr]
 
