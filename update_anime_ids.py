@@ -51,7 +51,7 @@ with open("pmm_edits.json", "r") as f:
     for anidb_id, ids in json.load(f).items():
         anidb_id = int(anidb_id)
         if anidb_id in anime_dicts:
-            for attr in ["tvdb_id","tvdb_season","tvdb_epoffset", "mal_id", "anilist_id", "imdb_id"]:
+            for attr in ["tvdb_id", "mal_id", "anilist_id", "imdb_id"]:
                 if attr in ids:
                     anime_dicts[anidb_id][attr] = ids[attr]
 
